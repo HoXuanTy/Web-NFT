@@ -1,0 +1,21 @@
+.container {
+    width: 204px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    
+    &:hover{
+        border-radius: 20px;
+        background-color: #0CAF60;
+        font-weight: 00;
+    }
+
+    .icon {
+        padding-top: 5px;
+        margin-right: 14px;
+        margin-left: 20px;
+    }
+}
+

@@ -1,0 +1,97 @@
+
+    .container {
+        position: relative;
+        margin-top: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        box-sizing: border-box;
+    
+        cursor: pointer;
+    
+        .avatar {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            transform: translate(320%, 350%);
+            margin-bottom: 5px;
+            border: 7px solid #161D26;
+            border-radius: 40%;
+            object-fit: cover;
+            
+        }
+    
+        .card {
+            
+            width: 287px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .imgProduct {
+                width: 251px;
+                height: 218px;
+                border-radius: 30px;
+            }
+    
+    
+            .Infor {
+                margin-top: 12px;
+                padding-left: 15px;
+    
+                .Infor_Name {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 5px;
+    
+                    .text {
+                        padding-bottom: 2px;
+                        font-size: 14px;
+                    }
+                }
+    
+                .textName {
+                    font-weight: 600;
+                }
+            }
+    
+            .BottomCard {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 32px;
+                gap: 15px;
+    
+                .Like {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 20px;
+                    border: 1px solid #303A46;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                }
+    
+                .Button {
+                    width: 170px;
+                    height: 50px;
+                    background-color: #0CAF60;
+                    border-radius: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 14px;
+                    cursor: pointer;
+    
+                    &:hover {
+                        background-color: #12BE73;
+                    }
+                }
+            }
+        }
+    
+    
+    }

@@ -1,0 +1,31 @@
+.container{
+    width: 80%;
+
+    .section{
+        padding-left: 25px;
+        width: 840px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        .viewAll{
+            cursor: pointer;
+            span{
+                padding-right: 10px;
+    
+            }
+        }
+    }
+    .creatorCard{
+        display: flex;
+        margin-top: 24px;
+        gap: 24px;
+    }
+    
+    .NFTCard{
+        margin-top: 24px;
+        display: flex;
+        flex-wrap:wrap;
+        gap: 20px;
+        box-sizing: border-box;
+    }
+}

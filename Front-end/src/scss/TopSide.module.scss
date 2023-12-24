@@ -1,0 +1,132 @@
+$button-color: #161D26;
+
+.wapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: auto;
+    width: 82%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(18, 24, 31, 1);
+    color: white;
+    border-bottom: 2px solid $button-color;
+
+    .topLeft {
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        gap: 24px;
+        margin-left: 50px;
+        .searchBox {
+            width: 400px;
+            height: 60px;
+            background-color: $button-color;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border-radius: 20px;
+
+            .search {
+                padding-left: 26px;
+                padding-top: 19px;
+                padding-bottom: 19px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                input {
+                    width: 156px;
+                    height: 21px;
+                    background-color: $button-color;
+                    border: none;
+                    color: white;
+                    outline: none;
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+
+    .topRight {
+        display: flex;
+        margin-right: 30px;
+        gap: 10px;
+      
+        .language {
+          width: 145px;
+          height: 60px;
+          background-color: $button-color;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 20px;
+          font-size: 14px;
+          position: relative;
+          cursor: pointer;
+      
+          &:hover .listDropdown {
+            display: block;
+          }
+      
+          .dropdownLang {
+            display: flex;
+            
+            .selected {
+              margin-right: 10px;
+            }
+          }
+        }
+      
+        img {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+      
+        .iconWallet,
+        .iconSetting,
+        .iconNotify {
+          width: 60px;
+          height: 60px;
+          background-color: $button-color;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 20px;
+          cursor: pointer;
+        }
+      
+        .listDropdown {
+          position: absolute;
+          background-color: $button-color;
+          top: 45px;
+          left: 0;
+          border-radius: 0 0 5px 5px;
+          box-shadow: 0 4px 8px rgba(22, 29, 38, 0.3);
+          width: 100%;
+          max-height: 80px;
+          display: none;
+      
+          .item {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+      
+            &:hover {
+              background: rgba(43, 57, 78, 0.2);
+            }
+          }
+        }
+      }
+
+
+
+
+
+}
+
+
